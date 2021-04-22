@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>kiem tra tu doi sung</title>
+</head>
+<body>
+<script>
+    let tu=prompt('nhap tu:');
+    function isPalindrome() {
+        let a = 0;
+        let b = tu.length - 1;
+        while (a < b) {
+            for (let i = 0; i <tu.length; i++) {
+                if (tu[a] == tu[b]) {
+                    a++;
+                    b--;
+                }else {
+                    alert('false');
+                    break;
+                }
+            }
+            alert('true');
+            break;
+        }
+    }
+    isPalindrome();
+</script>
+
+</body>
+</html>

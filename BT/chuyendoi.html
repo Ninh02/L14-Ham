@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CHUYỂN ĐỔI GIỮA FEET VÀ METER </title>
+</head>
+<body>
+<form>
+    <label>Feet</label>
+<input id="toMetter" type="number" placeholder="toMetter"
+oninput="footToMetter(this.value)"
+onchange="footToMetter(this.value)">
+    <p>Metter:<span id="outputmetter"></span></p>
+<label>Metter</label>
+    <input id="toFeet" type="number" placeholder="toFeet"
+    oninput="metterToFeet(this.value)"
+    onchange="metterToFeet(this.value)">
+    <p> Feet:<span id="outputfeet"></span></p>
+</form>
+<script>
+    function footToMetter(a){
+        a=parseFloat(a);
+        document.getElementById("outputmetter").innerHTML=0.305*a;
+    }
+    function metterToFeet(b){
+        b=parseFloat(b);
+        document.getElementById("outputfeet").innerHTML=3.279*b;
+    }
+</script>
+
+</body>
+</html>

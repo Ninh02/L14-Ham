@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 5</title>
+</head>
+<body>
+<script>
+    let arr1=[ 'Polaris','Aldebaran','Deneb','Vega','Altair','Dubhe','Regulus'];
+    let arr2=['Ursa Minor','Tarurus','Cygnus','Lyra','Aquila','Ursa Major','Leo'];
+    let a=prompt('nhap vao ten ngoi sao:');
+    function star(a) {
+        let index = -1;
+        for (let i = 0; i < arr1.length; i++) {
+            if (arr1[i] == a) {
+                index = i;
+                result = arr2[i];
+                return result;
+            }
+        }
+        if (index != -1) {
+           return result;
+        }else {
+            alert('khong tim thay ngoi sao');
+        }
+    }
+    alert(star(a));
+</script>
+
+</body>
+</html>
